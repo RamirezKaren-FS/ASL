@@ -1,0 +1,16 @@
+FROM golang:latest
+
+WORKDIR /usr/src/my-golang-app
+
+COPY go.* ./
+
+RUN go mod download 
+
+COPY . . 
+RUN go build  -o my-golang-app hello.go
+
+CMD ["./my-golang-app"]
+
+# ADD hello.go /
+
+# CMD [ "golang", "./hello.go" ]
