@@ -1,0 +1,5 @@
+FROM esolang/lua:latest
+
+ADD hello.lua /home/user/bin/hello.lua
+
+CMD [ "lua", "/home/user/bin/hello.lua" ]
