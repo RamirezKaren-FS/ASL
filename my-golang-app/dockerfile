@@ -10,7 +10,3 @@ COPY . .
 RUN go build  -o my-golang-app hello.go
 
 CMD ["./my-golang-app"]
-
-# ADD hello.go /
-
-# CMD [ "golang", "./hello.go" ]
