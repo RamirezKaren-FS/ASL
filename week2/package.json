@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@jworkman-fs/asl": "^1.2.43",
+    "express": "^4.19.2"
+  },
+  "name": "week2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
