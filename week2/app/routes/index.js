@@ -1,16 +1,15 @@
-const { 
-    ContactModel,
-    Pager,
-    sortContacts,
-    filterContacts
-} = require("@jworkman-fs/asl")
+// const { 
+//     ContactModel,
+//     Pager,
+//     sortContacts,
+//     filterContacts
+// } = require("@jworkman-fs/asl")
 
 const express = require("express");
+const contactRoutes = require("./contactRoutes")
 const router = express.Router();
 
 
-router.get('/', (req, res) => {
-    res.json(ContactModel.index())
-})
+router.use("/contacts", contactRoutes);
 
 module.exports = router;
