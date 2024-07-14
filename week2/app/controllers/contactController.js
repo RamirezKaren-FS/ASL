@@ -111,14 +111,14 @@ exports.getOneContact = (req, res) =>{
     try {
         const contact = ContactModel.index()
         for(let i=0; i<contact.length; i++ ){
-            const ncon= contact[i]
-            const yellow = ncon.id
+            const newCon= contact[i]
+            const selectedCon = newCon.id
             const {id} = req.params.id;
-            if(yellow === id){
-                console.log(ncon)
+            if(selectedCon === id){
+                console.log(newCon)
             }
             res.status(200).json({
-        data: ncon,
+        data: newCon,
     });
         }
     } catch (error) {
