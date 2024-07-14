@@ -132,6 +132,6 @@ exports.getOneContact = (req, res) =>{
 
 exports.deleteContact =  (req,res) => {
     const {id} = req.params;
-    const delContact =  ContactModel.findByIdAndDelete(id)
+    const delContact =  ContactModel.remove(id)
     res.status(303).json(delContact).redirect("localhost:8080/v1/contacts");
 };
